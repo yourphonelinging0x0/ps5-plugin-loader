@@ -1,3 +1,4 @@
+```markdown
 # ploader
 
 Unstable, work-in-progress PRX injector. 
@@ -23,3 +24,21 @@ I will likely only push stability fixes to this repo once I figure out how to ho
 ```ini
 [CUSA12345] ; Title ID
 /data/plugins/my_plugin.prx = true
+```
+
+## Building
+This project is built using the exact https://github.com/ps5-payload-dev/sdk
+
+You **must** use this specific SDK to compile the payload. Please follow their repository's tutorial to properly set up your build environment using WSL or native Linux.
+
+## Technical Notes
+Uses `ptrace` thread hijacking and kernel `ucred` manipulation. Allocates a temporary RWX page inside the game's memory space to execute a shellcode trampoline. It does **not** patch the `eboot.bin` directly.
+
+## Credits And References
+* Built using the https://github.com/ps5-payload-dev/sdk
+* Architecture, plugin handling, and general behavior heavily inspired by and referenced from:
+  * https://github.com/GoldHEN/GoldHEN
+  * https://github.com/GoldHEN/GoldHEN_Plugins_Repository
+  * https://github.com/etaHEN/etaHEN
+  * https://github.com/etaHEN/etaHEN-Plugins
+```
