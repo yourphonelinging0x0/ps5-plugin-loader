@@ -20,9 +20,10 @@ You must re-send the payload every time you restart the game. I opted for this m
 I will likely only push stability fixes to this repo once I figure out how to hook `SceShell` to build a better, automatic injection system. Until then, use it as-is.
 
 ## INI Format
+```ini
 [CUSA12345] ; Title ID
 /data/plugins/my_plugin.prx = true
-
+```
 ## Building
 This project is built using the exact https://github.com/ps5-payload-dev/sdk
 
