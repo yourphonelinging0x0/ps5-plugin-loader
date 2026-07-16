@@ -38,4 +38,3 @@ Uses `ptrace` thread hijacking and kernel `ucred` manipulation. Allocates a temp
   * https://github.com/GoldHEN/GoldHEN_Plugins_Repository
   * https://github.com/etaHEN/etaHEN
   * https://github.com/etaHEN/etaHEN-Plugins
-```
